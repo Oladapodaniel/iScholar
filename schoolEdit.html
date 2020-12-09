@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Bootstrap Css Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+     <!-- External FontAwesome Link -->
+    <script src="https://kit.fontawesome.com/3f7aab1544.js" crossorigin="anonymous"></script>
+
+    <!-- Internal Bootstrap Link -->
+    <link rel="stylesheet" href="./css/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> -->
+
+    <!--CSS Internal Links -->
+   <link rel="stylesheet" href="./css/fontawesome-free-5.14.0-web/css/all.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+    <title>School Edit</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-default">
+    <a class="navbar-brand text-white" href="index.html">iScholar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="school-dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="schoolProfile.html"><span><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          </span>&nbsp;Profile</a>
+        </li>
+        <li class="nav-item">
+            <a href="schoolProfile.html" class="nav-link text-white"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;Save</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-lg-5 details">
+        <div class="overlay"></div>
+        <div class="avartar">
+            <!-- <img src="./images/building.svg" alt=""> -->
+        </div>    
+    </div>
+
+<!--Edit Card Area -->
+    <div class="col-lg-5 m-auto ">
+       <div class="container">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="text-center mt-3"><strong>Edit School Details</strong></h5>
+                <p>School info</p>
+                <form>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <label for="inputAddress">Name of school</label>
+                            <input type="text" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="col">
+                            <label for="inputAddress"> School Email</label>
+                            <input type="email" class="form-control" placeholder="" required>
+                        </div>
+
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <label for="inputAddress">School Phone Number</label>
+                            <input type="number" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="col">
+                            <label for="validationDefault04">State</label>
+                            <select class="custom-select" id="validationDefault04" required>
+                                <option selected disabled value=""></option>
+                                <option>lagos</option>
+                                <option>Portharcout</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <label for="validationDefault04">L G A</label>
+                            <select class="custom-select" id="validationDefault04" required>
+                                <option selected disabled value=""></option>
+                                <option>Ajah</option>
+                                <option>Surelere</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="inputAddress">Nearest bustop</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="">
+                        </div>
+
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <label for="inputAddress">Whatapp number</label>
+                            <input type="numder" class="form-control" id="inputAddress" placeholder="">
+                        </div>
+                        <div class="col">
+                            <label for="inputAddress">Date of operation</label>
+                            <input type="date" class="form-control" id="inputAddress" placeholder="">
+                        </div>
+
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <label for="inputAddress">CAC</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="">
+                        </div>
+                        <div class="col">
+                            <label for="inputAddress">State approval number</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="">
+                        </div>
+
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <label for="inputAddress">School website</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="">
+                        </div>
+
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </form>
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+<!-- 
+
+<div class="container text-left mt-5 py-3">
+    <h4>Hello <em>Super Admin!</em></h4>
+    <p class="wrap pr-sm-1">Get to know registered schools, view their status and manage them directly using the table below</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="form-group col-lg-6 w-100">	
+            <form class="form-inline">         
+              <div class="input-group input-group-merged w-100 mr-sm-2 my-3">
+              <input class="form-control" type="search" placeholder="Search for Schools" aria-label="Search mt-2 ">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                        <a type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                </span>
+              </div>
+              </div>
+            </form>       
+      </div>
+    </div>
+</div>
+    
+
+<div class="container miller">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">S/N</th>
+            <th scope="col-sm-2">School Name</th>
+            <th scope="col-sm-2">Email</th>
+            <th scope="col-sm-2">Phone Number</th>
+            <th scope="col-sm-2">L.G.A</th>
+            <th scope="col-sm-2">Address</th>
+            <th scope="col-sm-2">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Lukas Accademy</td>
+            <td>Lukasaccademy@gmail.com</td>
+            <td>07032163419</td>
+            <td>Surulere-South</td>
+            <td>i4, Jonstesn Avenue</td>
+            <td class="flex-end">
+                <i class="fas fa-pencil-alt pr-3"></i>
+                <i class="fas fa-trash-alt"></i>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Lukas Accademy</td>
+            <td>Lukasaccademy@gmail.com</td>
+            <td>07032163419</td>
+            <td>Surulere-South</td>
+            <td>i4, Jonstesn Avenue</td>
+            <td class="flex-end">
+                <i class="fas fa-pencil-alt pr-3"></i>
+                <i class="fas fa-trash-alt"></i>
+            </td>
+          </tr>
+         
+          <tr>
+            <th scope="row">3</th>
+            <td>Lukas Accademy</td>
+            <td>Lukasaccademy@gmail.com</td>
+            <td>07032163419</td>
+            <td>Surulere-South</td>
+            <td>i4, Jonstesn Avenue</td>
+            <td class="flex-end">
+                <i class="fas fa-pencil-alt pr-3"></i>
+                <i class="fas fa-trash-alt"></i>
+            </td>
+          </tr>
+         
+          <tr>
+            <th scope="row">4</th>
+            <td>Lukas Accademy</td>
+            <td>Lukasaccademy@gmail.com</td>
+            <td>07032163419</td>
+            <td>Surulere-South</td>
+            <td>i4, Jonstesn Avenue</td>
+            <td class="flex-end">
+                <i class="fas fa-pencil-alt pr-3"></i>
+                <i class="fas fa-trash-alt"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="container pagination justify-content-end">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+</div>
+   
+
+
+
+ -->
+
+
+<!-- School Registration input -->
+<!-- public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
+        public string State { get; set; }
+        public string LocalGovernmentArea { get; set; }
+        public string NearestBusStop { get; set; }
+        public string WhatsAppNumber { get; set; }
+
+        public DateTime DateOfOperation { get; set; }
+        public string CACNumber { get; set; }
+        public string StateApprovalNumber { get; set; }
+        public string Website { get; set; } -->
+
+
+        <!-- Register a student -->
+        <!-- public string Name { get; set; }
+        public string Email { get; set; }
+        public string ParentPhone { get; set; }
+        public string Address { get; set; }
+
+        public string Gender { get; set; }
+        public string Class { get; set; }
+        public string ParentsWhatsAppNumber { get; set; }
+        public string ParentName { get; set; }
+        public string ParentEmail { get; set; } -->
+        
+    <!-- <div class=" container col-lg-5">
+        <div class="">
+          <div class="card bg-primary text-center card-form">
+            <div class="card-body act ">
+              <h3 class="text-white">Sign Up Today</h3>
+              <p class="text-white">Fill out this form to  Register</p>
+              <form>
+                
+                
+                <div class="form-group">
+                  <input type="number" class="form-contol form-control inpit text-dark-lg" placeholder="WhatsAppNumber">
+                </div>
+                <button class="btn btn-outline-light font-weight-bold w-75">Login</button>
+              </form>
+            </div>
+          </div>
+        </div> -->

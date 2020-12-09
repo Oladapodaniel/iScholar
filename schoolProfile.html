@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Bootstrap Css Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+     <!-- External FontAwesome Link -->
+    <script src="https://kit.fontawesome.com/3f7aab1544.js" crossorigin="anonymous"></script>
+
+    <!-- Internal Bootstrap Link -->
+    <link rel="stylesheet" href="/css/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> -->
+
+    <!--CSS Internal Links -->
+   <!-- <link rel="stylesheet" href="/css/fontawesome-free-5.14.0-web/css/all.min.css"> -->
+   <link rel="stylesheet" href="./css/style.css">
+    <title>School Profile</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">iScholar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="school-dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item active">
+            <div class="col-md-2">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </span> Profile Settings <span class="sr-only">(current)</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="schoolEdit.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Edit Profile</a>
+                      <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a>
+                    </div>
+                  </div>
+            </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+
+<div class="container">
+    <div class="row">
+        <div class="row col-md-6">
+<img class="pix2 img-fluid" src="./images/building.svg" alt="School">
+    </div>
+    </div>
+</div>
+<div class="stinf container">
+    <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">School Details</h5>
+
+              <p class="card-text pr-4">Alexandar International School</p>
+              <p class="card-text pr-4">07034573419</p>
+              <p class="card-text pr-4">alexandarinternationalschool@gmail.com</p>
+              <p class="card-text pr-4">www.alexandarinternationalschool.com</p> <br><br>
+              <p class="card-text pr-4">10, Ilupeju avenue lagos Nigeria</p>
+              <p class="card-text pr-4">Surulere L.G.A</p>
+              <h5 class="card-title mt-4 ">Official Details</h5>
+              <p class="card-text pr-4">12/4/2021</p>
+              <p class="card-text t pr-4">CAC12677</p>
+              <p class="card-text t pr-4">LAG CAC 1267745</p>
+              <a href="schoolEdit.html" class="tir"></a><i class="fas fa-pencil-alt"></i></a>
+              <a href="schoolEdit.html" class="tir2"><i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
+        public string State { get; set; }
+        public string LocalGovernmentArea { get; set; }
+        public string NearestBusStop { get; set; }
+        public string WhatsAppNumber { get; set; }
+
+        public DateTime DateOfOperation { get; set; }
+        public string CACNumber { get; set; }
+        public string StateApprovalNumber { get; set; }
+        public string Website { get; set; } -->
+      </div> 
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- School Registration input -->
+<!-- public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
+        public string State { get; set; }
+        public string LocalGovernmentArea { get; set; }
+        public string NearestBusStop { get; set; }
+        public string WhatsAppNumber { get; set; }
+
+        public DateTime DateOfOperation { get; set; }
+        public string CACNumber { get; set; }
+        public string StateApprovalNumber { get; set; }
+        public string Website { get; set; } -->
+
+
+        <!-- Register a student -->
+        <!-- public string Name { get; set; }
+        public string Email { get; set; }
+        public string ParentPhone { get; set; }
+        public string Address { get; set; }
+
+        public string Gender { get; set; }
+        public string Class { get; set; }
+        public string ParentsWhatsAppNumber { get; set; }
+        public string ParentName { get; set; }
+        public string ParentEmail { get; set; } -->
+        
+ 

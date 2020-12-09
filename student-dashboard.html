@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Student Dashboard</title>
+    <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand text-white" href="index.html">iScholar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-4">
+              <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <div class="col-md-2">
+                  <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                          </span> Emmanuel <span class="sr-only">(current)</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="studentProfile.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;View Profile</a>
+                        <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a>
+                      </div>
+                    </div>
+              </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+      <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 text-center">
+                    <h1>Welcome</h1>
+                    <h3>Emmanuel Adenaike</h3>
+                </div>
+            </div>
+        </div>
+      </header>
+
+      <section id="breadcrumb">
+          <div class="container">
+              <ol class="breadcrumb">
+                  <li class="active">Home</li>
+              </ol>
+          </div>
+      </section>
+
+      <section id="main">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3">
+                    <ul class="list-group card-shadow">
+                        <a href="owner-dashboard.html"><li class="list-group-item active main-color-bg"><i class="fa fa-home" aria-hidden="true"></i> &nbsp; Home</li></a>
+                        <a href="#"><li class="list-group-item"><i class="fa fa-industry" aria-hidden="true"></i> &nbsp; My courses</li></a>
+                        <a href="#"><li class="list-group-item"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> &nbsp; Course in Progress</li></a>
+                        <a href="#"><li class="list-group-item"><i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp; Leadership Club</li></a>
+                      </ul>
+
+
+                      <div class="card p-4 mt-3">
+                        <h4>Disk Space Used</h4>
+                      <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>  
+                        <h4>Bandwidth Used</h4>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                   
+                </div>
+                  
+                  <div class="col-md-9">
+                 
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <footer id="footer">
+          <p>Copyright iScholar, &copy; 2020</p>
+      </footer>
+
+
+      <!-- Add Page Modal -->
+
+      <div class="modal fade" id="addPage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form>
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Page</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="from-group">
+                  <label>Page Title</label>
+                  <input type="text" class="form-control" placeholder="Page Title">
+              </div>
+              <div class="form-group">
+                  <label>Page Body</label>
+                  <textarea name="editor1" class="form-control" placeholder="Page Body"></textarea>
+              </div>
+              <div class="checkbox">
+                  <label>
+                      <input type="checkbox"> Published
+                  </label>
+              </div>
+              <div class="form-group">
+                <label>Meta Tags</label>
+                <input type="text" class="form-control" placeholder="Add Some Tags...">
+              </div>
+              <div class="form-group">
+                  <label>Meta Description</label>
+                  <input type="text" class="form-control" placeholder="Add Meta Description...">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script> -->
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

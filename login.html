@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Bootstrap Css Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+     <!-- External FontAwesome Link -->
+    <script src="https://kit.fontawesome.com/3f7aab1544.js" crossorigin="anonymous"></script>
+
+    <!-- Internal Bootstrap Link -->
+    <link rel="stylesheet" href="/css/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> -->
+
+    <!--CSS Internal Links -->
+   <link rel="stylesheet" href="/css/fontawesome-free-5.14.0-web/css/all.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+    <title>Login Form</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">iScholar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-center">
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white" href="#">About</a>
+          </li>
+          <li class="nav-item active mr-4">
+            <a class="nav-link text-white" href="login.html">Login</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white" href="register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+
+  <div class="bg-login">
+    <div class="container">
+      <div class="row">
+      <div class="col-10 col-md-6 offset-1 offset-md-0 row align-content-center text-white text-center">
+        <h1 class="display-4 mt-3">Welcome Scholars!</h1>
+        <p class="mt-4"><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp;&nbsp;Simple can be harder than complex. You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end, because once you get there you can move mountains.&nbsp;&nbsp;<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+      </div>
+      <div class=" col-10 col-md-6 col-lg-5 offset-1 offset-md-0 offset-lg-1 card-height row align-content-center">
+        <form class="card card-width shadow-lg p-5">
+          <div class="mt-3 text-center">
+            <h4 class="">Login</h4>
+        </div>
+        <!-- Start of Official information -->
+            <div class="form-row">
+              <div class="form-group col-md-12 col-md-6">
+                <label for="school">User Name</label>
+                <div class=" input-group input-group-merged">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                          <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="input form-control inpit text-dark" id="student" placeholder="Student Name" require>    
+                </div>
+                </div>
+            </div>
+
+    
+
+      <div class="form-row">
+            <div class="form-group col-md-12 col-md-6 pt-3">
+              <label for="password">Password</label>
+              <div class=" input-group input-group-merged">
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                        <i class="fas fa-lock"  aria-hidden="true"></i>
+                  </span>
+                </div>
+                <input type="password" class="form-control inpit text-dark" id="password" placeholder="Password" require>    
+              </div>
+              </div>
+
+      </div>
+<!-- End Of Address information -->
+
+<!-- login Button -->
+    <div class="form-group">
+    </div>
+    <button type="submit" class="btn btnreg btn-primary mt-3 w-100">Login</button>
+    <div class="form-check">
+      <p class="wrap mt-4 text-center">
+          <a href="#">Fogot Password?</a>
+        </p>
+  </label>
+</div>
+
+      <p class="text-center py-2">Don't have an account? <a href="register.html">Register</a></p>
+</form>
+      </div>
+      </div>
+    </div>
+    <!-- <div class="container mainform shadow-lg"> -->
+       
+
+                
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+  <!-- End of Signup Button -->
+
+<!-- School Registration input -->
+<!-- public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
+        public string State { get; set; }
+        public string LocalGovernmentArea { get; set; }
+        public string NearestBusStop { get; set; }
+        public string WhatsAppNumber { get; set; }
+
+        public DateTime DateOfOperation { get; set; }
+        public string CACNumber { get; set; }
+        public string StateApprovalNumber { get; set; }
+        public string Website { get; set; } -->
+
+
+
+
+        <!-- Register a student -->
+        <!-- public string Name { get; set; }
+        public string Email { get; set; }
+        public string ParentPhone { get; set; }
+        public string Address { get; set; }
+
+        public string Gender { get; set; }
+        public string Class { get; set; }
+        public string ParentsWhatsAppNumber { get; set; }
+        public string ParentName { get; set; }
+        public string ParentEmail { get; set; } -->
+
+     
+          
+    <!-- <div class=" container col-lg-5">
+        <div class="">
+          <div class="card bg-primary text-center card-form">
+            <div class="card-body act ">
+              <h3 class="text-white">Sign Up Today</h3>
+              <p class="text-white">Fill out this form to  Register</p>
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-contol form-control inpit text-dark-lg" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-contol form-control inpit text-dark-lg" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-contol form-control inpit text-dark-lg" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-contol form-control inpit text-dark-lg" placeholder="Address">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-contol form-control inpit text-dark-lg" placeholder="State">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-contol form-control inpit text-dark-lg" placeholder="LocalGovernmentArea">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-contol form-control inpit text-dark-lg" placeholder="NearestBusStop">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-contol form-control inpit text-dark-lg" placeholder="WhatsAppNumber">
+                </div>
+                <button class="btn btn-outline-light font-weight-bold w-75">Login</button>
+              </form>
+            </div>
+          </div>
+        </div> -->

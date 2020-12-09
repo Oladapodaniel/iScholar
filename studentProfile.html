@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Bootstrap Css Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+     <!-- External FontAwesome Link -->
+    <script src="https://kit.fontawesome.com/3f7aab1544.js" crossorigin="anonymous"></script>
+
+    <!-- Internal Bootstrap Link -->
+    <link rel="stylesheet" href="/css/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> -->
+
+    <!--CSS Internal Links -->
+   <link rel="stylesheet" href="/css/fontawesome-free-5.14.0-web/css/all.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+    <title>Student Profile</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">iScholar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <div class="col-md-2">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </span> Profile <span class="sr-only">(current)</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a href="studentEdit.html" class="dropdown-item"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;Edit Profile</a>
+                      <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a>
+                    </div>
+                  </div>
+            </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+     <!-- <nav class="container-fluid mb-4 shadow-lg navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1 mr-auto p-3 ml-5">Aliya Adeshina</span>
+    <a class="col-md-2">
+      <medium class="mr-2 mb-0 text-sm-center "><i class="mr-3  fas fa-pencil-alt"></i>Edit Profile</medium>
+    </a>
+  </nav> -->
+<div class="container">
+    <div class="row">
+        <div class="row col-md-6">
+        <img class="pix2 img-fluid" src="./images/avatar.svg" alt="Aliya">
+    </div>
+    </div>
+</div>
+<div class="stinf container">
+    <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Student Details</h5>
+
+              <p class="card-text t pr-4">Aliya Adeshina</p>
+              <p class="card-text t pr-4">SSS 2B</p>
+               <p class="card-text t pr-4">Female</p>
+              <p class="card-text t pr-4">aliyaadeshina@gmail.com</p>
+              <p class="card-text t pr-4">07034573419</p>
+              <p class="card-text t pr-4">17, Surulere avenue lagos Nigeria</p>
+             
+              <h5 class="card-title mt-4 ">Parent Details</h5>
+              <p class="card-text t pr-4">Mr. Dayo Adeshina</p>
+              <p class="card-text t pr-4">Mrs. Amirat Adeshina</p>
+              <a href="studentEdit.html" class="tir"></a><i class="fas fa-pencil-alt"></i></a>
+              <a href="studentEdit.html" class="tir2"><i class="fas fa-eye"></i></a>
+            </div>
+          </div>
+        </div>
+      </div> 
+</div>
+
+<div class="stinf container">
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Course Enrolled</h5>
+              <p class="card-text">Mathemathics</p>
+              <p class="card-text">English</p>
+              <p class="card-text">Literature</p>
+              <a href="#" class="btn btn-outline-primary"><i class="fab fa-discourse"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Course in progress</h5>
+              <p class="card-text">Chemistery</p>
+              <p class="card-text">English</p>
+              <p class="card-text">Litrature</p>
+              <a href="#" class="btn btn-outline-primary"><i class="fab fa-discourse"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Completed</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-outline-primary"><i class="fab fa-discourse"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">English</h5>
+                <div class="progress mt-3">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div>
+              <p class="card-text mt-3">Great Job Scholar</p>
+            </div>
+          </div>
+          
+        </div> 
+      </div>
+    </div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">English</h5>
+                <div class="progress mt-3">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div>
+              <p class="card-text mt-3">Great Job Scholar</p>
+            </div>
+          </div>
+          
+        </div> 
+      </div>
+    </div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">English</h5>
+                <div class="progress mt-3">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div>
+              <p class="card-text mt-3">Great Job Scholar</p>
+            </div>
+          </div>
+          
+        </div> 
+      </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- School Registration input -->
+<!-- public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
+        public string State { get; set; }
+        public string LocalGovernmentArea { get; set; }
+        public string NearestBusStop { get; set; }
+        public string WhatsAppNumber { get; set; }
+
+        public DateTime DateOfOperation { get; set; }
+        public string CACNumber { get; set; }
+        public string StateApprovalNumber { get; set; }
+        public string Website { get; set; } -->
+
+
+        <!-- Register a student -->
+        <!-- public string Name { get; set; }
+        public string Email { get; set; }
+        public string ParentPhone { get; set; }
+        public string Address { get; set; }
+
+        public string Gender { get; set; }
+        public string Class { get; set; }
+        public string ParentsWhatsAppNumber { get; set; }
+        public string ParentName { get; set; }
+        public string ParentEmail { get; set; } -->
+        
+ 
